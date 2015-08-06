@@ -11,6 +11,8 @@ gameStart = function(core) {
 	sprite.x = 144;
 	sprite.y = 0;
 
+	sprite.tl.moveBy(0, 0, 0);
+
 	core.rootScene.addChild(sprite);
 
 };
