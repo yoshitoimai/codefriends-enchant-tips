@@ -24,3 +24,7 @@ gameStart = function(core) {
 	}, 2000);
 
 };
+
+getRandom = function(startNum, endNum) {
+	return startNum + Math.floor( Math.random() * (endNum - startNum + 1));
+};
