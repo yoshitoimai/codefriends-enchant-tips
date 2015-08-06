@@ -1,12 +1,12 @@
 preroadImage = function(core) {
 
-	core.preload('sample.png');
+	core.preload('asteroid_1.png');
 
 };
 
 gameStart = function(core) {
 
-	var sprite = new ActionSprite('sample.png', 32, 32);
+	var sprite = new ActionSprite('asteroid_1.png', 32, 32);
 
 	core.rootScene.addChild(sprite);
 
