@@ -22,4 +22,10 @@ gameStart = function(core) {
 
 	core.rootScene.addChild(player);
 
+	player.collision = asteroid;
+	player.on("collision", function(e) {
+		player.remove();
+		core.stop();
+	});
+
 };
