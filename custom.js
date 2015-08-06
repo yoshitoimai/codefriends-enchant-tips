@@ -1,5 +1,5 @@
 gameStart = function(core) {
 
-	core.rootScene.backgroundColor = "black";
+	core.rootScene.backgroundColor = "blue";
 
 };
