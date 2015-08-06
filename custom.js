@@ -6,17 +6,21 @@ preroadImage = function(core) {
 
 gameStart = function(core) {
 
-	var sprite = new ActionSprite('asteroid_1.png', 32, 32);
+	setInterval(function() {
 
-	sprite.x = 144;
-	sprite.y = 0;
+		var sprite = new ActionSprite('asteroid_1.png', 32, 32);
 
-	sprite.tl.moveBy(0, 224, 50).then(function() {
+		sprite.x = 144;
+		sprite.y = 0;
 
-		sprite.remove();
+		sprite.tl.moveBy(0, 224, 50).then(function() {
 
-	});
+			sprite.remove();
 
-	core.rootScene.addChild(sprite);
+		});
+
+		core.rootScene.addChild(sprite);
+
+	}, 2000);
 
 };
