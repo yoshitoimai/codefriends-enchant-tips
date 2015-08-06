@@ -13,6 +13,8 @@ gameStart = function(core) {
 
 	sprite.tl.moveBy(0, 224, 50).then(function() {
 
+		sprite.remove();
+
 	});
 
 	core.rootScene.addChild(sprite);
